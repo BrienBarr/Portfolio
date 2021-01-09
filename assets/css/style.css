@@ -21,20 +21,20 @@ body{
 .wrapper{
     background-color: #F2F5F5;
     margin-top: 20px;
-    /* margin-bottom: 60px; */
+    margin-bottom: 80px;
     padding-top: 15px;
-    padding-bottom: 75px;
+    padding-bottom: 25px;
     padding-left: 40px;
     padding-right: 40px;
     /* overflow: scroll; */
 }
 
-.bio{
+/* .bio{
     padding-bottom: 30px;
     margin-bottom: 110px;
-}
+} */
 
-.portfolio{
+.bio, .portfolio{
     padding-bottom: 30px;
     margin-bottom: 110px;
 }
@@ -105,6 +105,11 @@ body{
         font-size: small;
     }
 
+    /* .wrapper {
+        margin-bottom: 80px;
+        padding-bottom: 25px;
+    } */
+
     .smallcard{
         width: 10rem;
         height: auto;
@@ -154,9 +159,16 @@ body{
     } */
 
     /* Make the cards on the portfolio page small */
-    .smallcard{
+    .smallcard {
         width: 14rem;
         height: auto;
+    }
+}
+
+@media (max-width: 575px) {
+    .bio, .portfolio{
+        /* padding-bottom: 30px; */
+        margin-bottom: 90px;
     }
 }
 
@@ -175,6 +187,9 @@ body{
         font-size: medium;
     }
 
+    .wrapper {
+        margin-bottom: 100px;
+    }
     /* Make the thumbnail images smaller */
     /* .medium{
         width: 175px;
