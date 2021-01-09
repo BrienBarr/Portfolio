@@ -62,10 +62,17 @@ body{
 
 /* custom styling for card class */
 .card{
-    width: 23rem;
-    margin: 0 auto;
+    width: 18rem;
+    margin: auto;
     float: none;
     margin-bottom: 10px;
+}
+
+.smallcard img{
+    /* width: 250px; */
+    height: auto;
+    margin: auto;
+    max-width: 95%;
 }
 
 /* custom styling to add more margin at the bottom of the element */
@@ -78,8 +85,50 @@ body{
     height: 470px;
 }
 
+@media (max-width: 320px) {
+
+    /* styling to add padding to nav */
+    .squeeze{
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .navbar-toggler {
+        font-size: 1.0rem;
+    }
+
+    h1{
+        font-size: 1.0rem;
+    }
+
+    .container {
+        font-size: small;
+    }
+
+    .smallcard{
+        width: 10rem;
+        height: auto;
+    }
+}
+
+@media (min-width: 321px) and (max-width: 350px) {
+
+    h1{
+        font-size: 1.5rem;
+    }
+
+    .container {
+        font-size: smaller;
+    }
+
+    .smallcard{
+        width: 12rem;
+        height: auto;
+    }
+}
+
 /* @media query for extra small screens */
-@media screen and (max-width: 575.98px) {
+@media (min-width: 351px) and (max-width: 575.98px) {
     
     /* Make the h1 heading size small */
     h1{
@@ -99,14 +148,14 @@ body{
     }
 
     /* Make the image thumbnail small */
-    .img-thumbnail{
+    /* .img-thumbnail{
         width: 125px;
         height: auto;
-    }
+    } */
 
     /* Make the cards on the portfolio page small */
     .smallcard{
-        width: 8rem;
+        width: 14rem;
         height: auto;
     }
 }
@@ -127,20 +176,20 @@ body{
     }
 
     /* Make the thumbnail images smaller */
-    .medium{
+    /* .medium{
         width: 175px;
         height: auto;
-    }
+    } */
 
     /* Make the cards on the portfolio page smaller */
     .smallcard{
-        width: 15rem;
+        width: 16rem;
         height: auto;
     }
 
     /* Make the images in the cards on the portfolio page smaller */
-    .smallcard img{
+    /* .smallcard img{
         width: 250px;
         height: auto;
-    }
+    } */
 }
