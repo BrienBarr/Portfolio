@@ -9,10 +9,12 @@ body{
     padding-right: 40px;
 }
 
+/* styling to add space between icons in navbar brand */
 .additional{
     margin-left: 10px;
 }
 
+/* styling for container */
 .container{
     max-width: 90%;
 }
@@ -26,21 +28,12 @@ body{
     padding-bottom: 25px;
     padding-left: 40px;
     padding-right: 40px;
-    /* overflow: scroll; */
 }
 
-/* .bio{
-    padding-bottom: 30px;
-    margin-bottom: 110px;
-} */
-
+/* styling for main content containers on bio and portfolio page */
 .bio, .portfolio{
     padding-bottom: 30px;
     margin-bottom: 110px;
-}
-
-.row {
-    /* width: 90%; */
 }
 
 /* styling for h1 heading in wrapper class */
@@ -56,10 +49,6 @@ body{
     margin-right: 10px;
 }
 
-/* .center{
-    align-content: center;
-} */
-
 /* custom styling for card class */
 .card{
     width: 18rem;
@@ -68,8 +57,8 @@ body{
     margin-bottom: 10px;
 }
 
+/* styling for card images */
 .smallcard img{
-    /* width: 250px; */
     height: auto;
     margin: auto;
     max-width: 95%;
@@ -85,6 +74,7 @@ body{
     height: 470px;
 }
 
+/* @media query for screens 320px and lower in width */
 @media (max-width: 320px) {
 
     /* styling to add padding to nav */
@@ -93,39 +83,42 @@ body{
         padding-right: 20px;
     }
 
+    /* styling for navbar collapsible button */
     .navbar-toggler {
         font-size: 1.0rem;
     }
 
+    /* styling for h1 elements */
     h1{
         font-size: 1.0rem;
     }
 
+    /* styling for container */
     .container {
         font-size: small;
     }
 
-    /* .wrapper {
-        margin-bottom: 80px;
-        padding-bottom: 25px;
-    } */
-
+    /* styling for cards */
     .smallcard{
         width: 10rem;
         height: auto;
     }
 }
 
+/* @media query for screens between 321px and 350px in width*/
 @media (min-width: 321px) and (max-width: 350px) {
 
+    /* styling for h1 elements */
     h1{
         font-size: 1.5rem;
     }
 
+    /* styling for container */
     .container {
         font-size: smaller;
     }
 
+    /* styling for cards */
     .smallcard{
         width: 12rem;
         height: auto;
@@ -142,8 +135,6 @@ body{
 
     /* Make the container fit the width of the screen and make the font size smaller */
     .container{
-        /* width: 100%; */
-        /* margin-left: 0; */
         font-size: smaller;
         word-break: break-all;
         -webkit-hyphens: auto;
@@ -152,12 +143,6 @@ body{
         hyphens: auto;
     }
 
-    /* Make the image thumbnail small */
-    /* .img-thumbnail{
-        width: 125px;
-        height: auto;
-    } */
-
     /* Make the cards on the portfolio page small */
     .smallcard {
         width: 14rem;
@@ -165,9 +150,9 @@ body{
     }
 }
 
+/* @media query for screens 575px and lower in width */
 @media (max-width: 575px) {
     .bio, .portfolio{
-        /* padding-bottom: 30px; */
         margin-bottom: 90px;
     }
 }
@@ -182,29 +167,16 @@ body{
 
     /* Make the container smaller and make the font size smaller*/
     .container{
-        /* width: 85%; */
-        /* margin-left: 0; */
         font-size: medium;
     }
 
     .wrapper {
         margin-bottom: 100px;
     }
-    /* Make the thumbnail images smaller */
-    /* .medium{
-        width: 175px;
-        height: auto;
-    } */
 
     /* Make the cards on the portfolio page smaller */
     .smallcard{
         width: 16rem;
         height: auto;
     }
-
-    /* Make the images in the cards on the portfolio page smaller */
-    /* .smallcard img{
-        width: 250px;
-        height: auto;
-    } */
 }
